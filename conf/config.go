@@ -11,9 +11,15 @@ var GConf = map[string]string{
 var DPI = float64(72)
 
 func init() {
-	goPath, exist := os.LookupEnv("GOPATH")
-	if !exist {
-		panic("GOPATH error")
-	}
-	GConf["font_path"] = goPath + "/src/github.com/wnote/html2img/conf/fonts/"
+	setDefaultFontsPath()
+}
+
+// SetFontsPath 自定义字体路径
+func SetFontsPath(fontPath string){
+	GConf["font_path"] = fontPath
+}
+
+func setDefaultFontsPath()  {
+	goPath, _ := os.LookupEnv("GOPATH")
+	SetFontsPath(goPath + "/src/github.com/LiZhuBin/html2img/conf/fonts/")
 }

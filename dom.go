@@ -203,6 +203,9 @@ CHILDREN:
 			dom.Inner.Y2 = endOffset.Y2
 			dom.Inner.X2 = endOffset.X2
 			dom.Container.X2 = dom.Inner.X2
+			if domStyle.Width != "" {
+				dom.Container.X2 = dom.Container.X1 + getIntSize(domStyle.Width)
+			}
 			if domStyle.Padding.Right != "" {
 				dom.Container.X2 += getIntSize(domStyle.Padding.Right)
 			}

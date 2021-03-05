@@ -8,7 +8,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/wnote/html2img"
+	"github.com/LiZhuBin/html2img"
 	"golang.org/x/net/html"
 )
 

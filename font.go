@@ -1,6 +1,6 @@
 package html2img
 
-import "github.com/wnote/html2img/conf"
+import "github.com/LiZhuBin/html2img/conf"
 
 func calcCharacterPx(text string, fontSize float64) float64 {
 	return (float64(calCharacterLen(text)) * fontSize * conf.DPI / 72) / 3

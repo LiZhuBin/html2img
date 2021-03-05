@@ -1,6 +1,6 @@
 package main
 
-import "github.com/wnote/html2img/examples"
+import "github.com/LiZhuBin/html2img/examples"
 
 func main() {
 	examples.OutputImg()

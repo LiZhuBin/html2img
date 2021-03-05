@@ -9,7 +9,7 @@ import (
 	"math"
 
 	"github.com/golang/freetype/truetype"
-	"github.com/wnote/html2img/conf"
+	"github.com/LiZhuBin/html2img/conf"
 	"golang.org/x/image/font"
 	"golang.org/x/image/math/fixed"
 )
